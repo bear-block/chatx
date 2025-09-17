@@ -1,12 +1,11 @@
-import { Text, View, StyleSheet } from 'react-native';
-import { multiply } from '@bear-block/chatx';
-
-const result = multiply(3, 7);
+import React from 'react';
+import { StyleSheet, View } from 'react-native';
+import ComprehensiveExample from './ComprehensiveExample';
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text>Result: {result}</Text>
+      <ComprehensiveExample />
     </View>
   );
 }
@@ -14,7 +13,5 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    alignItems: 'center',
-    justifyContent: 'center',
   },
 });
